@@ -47,9 +47,9 @@
         "NODE_ENV": "production",
         "WEB_PORT": "8000",
         "EMAIL_PORT": "25",
-        "BASE_URL": "https://www.kill-the-newsletter.com",
-        "EMAIL_DOMAIN": "kill-the-newsletter.com",
-        "ISSUE_REPORT": "mailto:kill-the-newsletter@leafac.com"
+        "BASE_URL": "https://www.recentic.com",
+        "EMAIL_DOMAIN": "recentic.com",
+        "ISSUE_REPORT": "mailto:kill-the-newsletter@bins.se"
       }
     },
     {
@@ -60,9 +60,9 @@
   "deploy": {
     "production": {
       "user": "root",
-      "host": "kill-the-newsletter.com",
+      "host": "recentic.com",
       "ref": "origin/master",
-      "repo": "git@github.com:leafac/www.kill-the-newsletter.com.git",
+      "repo": "git@github.com:bolstad/www.kill-the-newsletter.com.git",
       "path": "/root/www.kill-the-newsletter.com",
       "pre-setup": "(curl -sL https://deb.nodesource.com/setup_13.x | bash -) && apt install -y nodejs build-essential && (ssh -o StrictHostKeyChecking=no git@github.com || true)",
       "post-setup": "env NODE_ENV=production npm ci && npx pm2 startup",

@@ -1,7 +1,7 @@
-www.kill-the-newsletter.com {
+www.recentic.com {
   reverse_proxy localhost:8000
 }
 
-kill-the-newsletter.com {
-  redir https://www.kill-the-newsletter.com{uri} permanent
+recentic.com {
+  redir https://www,recentic.com{uri} permanent
 }
